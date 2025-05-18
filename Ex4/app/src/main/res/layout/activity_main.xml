@@ -19,7 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text|textPersonName" />
 
     <TextView
         android:id="@+id/textView2"
@@ -32,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="text" />
+        android:inputType="text|textPersonName" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,14 +40,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnFar"
+            android:id="@+id/btnFC"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Convert To Celsius" />
 
         <Button
-            android:id="@+id/btnCel"
+            android:id="@+id/btnCF"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
