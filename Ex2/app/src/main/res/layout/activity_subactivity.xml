@@ -2,28 +2,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Subactivity">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Demo Cycle Life"
-        android:id="@+id/textView"
-        android:textStyle="normal|bold"
-        android:gravity="center"
+        android:text="Chào lớp CR424"
+        android:textSize="18sp"
         android:textColor="@android:color/holo_green_dark"
-        android:textSize="30sp"/>
+        android:gravity="center"/>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Call Dialog"
-        android:layout_gravity="center_horizontal"
-        android:textSize="24sp"/>
-
+        android:text="OK"
+        android:gravity="center"
+        android:textSize="18sp"/>
 </LinearLayout>
