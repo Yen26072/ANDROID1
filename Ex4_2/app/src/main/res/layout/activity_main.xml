@@ -5,51 +5,84 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+    android:stretchColumns="1"
     tools:context=".MainActivity">
+
     <TextView
         android:id="@+id/TextView"
-        android:text="Chuong trinh tính chi so BMI"/>
+        android:gravity="center"
+        android:text="Chuong trinh tính chi so BMI"
+        android:textSize="24sp" />
 
     <TableRow>
+
         <TextView
-        android:id="@+id/TextView1"
-        android:text="Nhap tên" />
+            android:id="@+id/TextView1"
+            android:text="Nhap tên"
+            android:textSize="20sp" />
+
         <EditText
             android:id="@+id/edtten"
-            android:inputType="textPersonName"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
+            android:inputType="textPersonName" />
     </TableRow>
 
 
     <TableRow>
+
         <TextView
             android:id="@+id/textView2"
-            android:text="Chieu cao"/>
+            android:text="Chieu cao"
+            android:textSize="20sp" />
+
         <EditText
             android:id="@+id/edtchieucao"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
     </TableRow>
 
     <TableRow>
+
         <TextView
             android:id="@+id/textView3"
-            android:text="Can nang"/>
+            android:text="Can nang"
+            android:textSize="20sp" />
+
         <EditText
             android:id="@+id/edtcannang"
-            android:inputType="textPersonName"/>
+            android:inputType="textPersonName" />
     </TableRow>
 
     <TableRow>
+
         <Button
             android:id="@+id/btnBMI"
-            android:text="Tinh BMI"/>
+            android:layout_span="2"
+            android:text="Tinh BMI" />
     </TableRow>
 
     <TableRow>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="BMI"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtBMI"
+            android:inputType="textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
         <TextView
             android:id="@+id/textView5"
-            android:text="Chan doan"/>
+            android:text="Chan doan"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/edtChandoan"
+            android:inputType="textPersonName" />
     </TableRow>
 
 </TableLayout>
