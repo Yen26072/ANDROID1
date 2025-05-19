@@ -5,6 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
     android:stretchColumns="1"
     tools:context=".MainActivity">
 
@@ -16,6 +18,7 @@
             android:layout_height="match_parent"
             android:layout_span="2"
             android:background="#0A500D"
+            android:gravity="center"
             android:text="Chuyen doi nam duong lich"
             android:textColor="#F4EEEE"
             android:textSize="20sp" />
@@ -25,13 +28,16 @@
 
         <TextView
             android:id="@+id/textView2"
-            android:text="Nam duong lich"/>
+            android:paddingHorizontal="10dp"
+            android:text="Nam duong lich"
+            android:textSize="20sp" />
 
         <EditText
             android:id="@+id/editnamduonglich"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="2013"/>
+            android:text="2013"
+            android:textSize="20sp" />
 
 
     </TableRow>
@@ -43,18 +49,23 @@
             android:layout_column="1"
             android:background="#147D7979"
             android:text="Chuyen doi"
-            android:textColor="#1B1818" />
+            android:textColor="#1B1818"
+            android:textSize="20sp" />
     </TableRow>
+
     <TableRow>
 
         <TextView
             android:id="@+id/textView3"
-            android:text="Nam am lich" />
+            android:paddingHorizontal="10dp"
+            android:text="Nam am lich"
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView4"
             android:background="#F8DF07"
-            android:text="Quy ty" />
+            android:text="Quy ty"
+            android:textSize="20sp" />
     </TableRow>
 
     <TextView android:background="#044907" />
