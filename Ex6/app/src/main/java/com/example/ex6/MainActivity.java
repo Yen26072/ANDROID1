@@ -1,5 +1,6 @@
 package com.example.ex6;
 
+import android.app.Activity;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
@@ -103,7 +104,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
         AlertDialog.Builder b = new AlertDialog.Builder(MainActivity.this);
         b.setTitle("Question");
         b.setMessage("Are you sure you want to exits?");
@@ -122,4 +122,6 @@ public class MainActivity extends AppCompatActivity {
         });
         b.create().show();
     }
+
+
 }
