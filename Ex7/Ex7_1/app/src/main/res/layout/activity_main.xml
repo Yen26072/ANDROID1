@@ -25,7 +25,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="#D8CCCC"
-        android:backgroundTint="#DAD0D0"
         android:text="Open Child Activity"
         android:textColor="#0B0A0A"
         app:layout_constraintEnd_toEndOf="parent"
