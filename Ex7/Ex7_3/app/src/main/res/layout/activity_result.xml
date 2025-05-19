@@ -5,16 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:stretchColumns="1"
+    android:layout_margin="10dp"
     tools:context=".ResultActivity">
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TableRow>
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_span="2"
             android:gravity="center"
@@ -24,9 +22,7 @@
             android:textStyle="bold" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TableRow>
 
         <TextView
             android:id="@+id/textViewA"
@@ -36,15 +32,13 @@
 
         <EditText
             android:id="@+id/editTextTextA"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text|textPersonName" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TableRow>
 
         <TextView
             android:id="@+id/textViewB"
@@ -54,15 +48,16 @@
 
         <EditText
             android:id="@+id/editTextTextB"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="text|textPersonName" />
     </TableRow>
 
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button2"
@@ -83,5 +78,6 @@
             android:textAllCaps="true"
             android:textColor="#F8F2F2"
             android:textSize="20sp" />
-    </TableRow>
+    </LinearLayout>
+
 </TableLayout>
