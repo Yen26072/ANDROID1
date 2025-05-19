@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,13 +7,106 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TableRow>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#053007"
+            android:gravity="center"
+            android:layout_span="3"
+            android:text="Giai phuong trinh bac 2"
+            android:textColor="#FBF6F6"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EFFAFB"
+            android:text="Nhap a:" />
+
+        <EditText
+            android:id="@+id/edita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_span="2"
+            android:inputType="text|textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EFFAFB"
+            android:text="Nhap b:" />
+
+        <EditText
+            android:id="@+id/editb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10"
+
+            android:inputType="text|textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EFFAFB"
+            android:text="Nhap c:" />
+
+        <EditText
+            android:id="@+id/editc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:ems="10"
+
+            android:inputType="text|textPersonName" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/btntieptuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiep tuc" />
+
+        <Button
+            android:id="@+id/btngiaipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Giai PT" />
+
+        <Button
+            android:id="@+id/btnthoat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thoat" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/txtketqua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span="3"
+            android:background="#114213"
+            android:textColor="#F4EFEF" />
+    </TableRow>
+</TableLayout>
