@@ -1,6 +1,9 @@
 package com.example.ex7_1;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,6 +23,14 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        Button btn1 = (Button) findViewById(R.id.button);
+        btn1.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(MainActivity.this, Child_activity.class);
+                startActivity(intent1);
+            }
+        });
     }
 }
