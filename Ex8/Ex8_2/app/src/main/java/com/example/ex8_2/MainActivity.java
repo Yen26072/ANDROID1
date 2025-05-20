@@ -41,12 +41,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent myintent = new Intent(ACTION_IMAGE_CAPTURE);
-                if(ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+                if(ActivityCompat.checkSelfPermission(MainActivity.this, android.Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
                     ActivityCompat.requestPermissions(MainActivity.this, new String[]{
-                            Manifest.permission.CAMERA}, 1);
+                            android.Manifest.permission.CAMERA}, 1);
                     return;
                 }
-                startActivityForResult(cameraintent, 99);
+                startActivityForResult(myintent, 99);
             }
         });
     }
