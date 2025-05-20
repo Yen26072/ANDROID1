@@ -34,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
         lv1.setAdapter(adapter1);
         lv1.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                txt1.setText("Vi tri " + position + " : " + arr1[position]);
+            public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+                txt1.setText("Vi tri " + i + " : " + arr1[i]);
             }
         });
     }
