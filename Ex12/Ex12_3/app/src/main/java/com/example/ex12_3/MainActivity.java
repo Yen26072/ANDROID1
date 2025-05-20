@@ -29,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         });
         txt = (TextView) findViewById(R.id.txt1);
         Spinner spin = (Spinner) findViewById(R.id.spinner);
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item_single_choice);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_spinner_item, arr);
+        adapter.setDropDownViewResource(android.R.layout.simple_list_item_single_choice);
         spin.setAdapter(adapter);
         spin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
