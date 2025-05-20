@@ -1,7 +1,10 @@
 package com.example.ex12_2;
 
+import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -23,12 +26,16 @@ import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
+    String str;
+    SharedPreferences share;
+    SharedPreferences.Editor editor;
     ListView lv;
     ArrayList<String> arraywork;
     ArrayAdapter<String> arrayAdapter;
     EditText editwork, edithour, editminute;
     TextView txtdate;
     Button btn;
+    Context context;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     builder.show();
                 }
                 else {
-                    String str = editwork.getText().toString() + " - " + edithour.getText().toString() + ":" + editminute.getText().toString();
+                    str = editwork.getText().toString() + " - " + edithour.getText().toString() + ":" + editminute.getText().toString();
                     arraywork.add(str);
                     arrayAdapter.notifyDataSetChanged();
                     edithour.setText("");
@@ -76,5 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+        share = PreferenceManager.getDefaultSharedPreferences(this);
+        editor = share.edit();
+        editor.putString("Notes", str);
+        editor.apply();
     }
 }
