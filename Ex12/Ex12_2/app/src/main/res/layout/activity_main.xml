@@ -33,7 +33,7 @@
         android:drawableTint="#C1BDBD"
         android:ems="10"
         android:inputType="text|textPersonName"
-        android:text="Enter the work here..."
+        android:hint="Enter the work here..."
         android:textColor="#8B7F7F" />
 
     <LinearLayout
