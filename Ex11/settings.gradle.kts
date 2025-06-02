@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "Ex11"
 include(":app")
+include(":app")
  
