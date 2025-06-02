@@ -1,11 +1,14 @@
 package com.example.intent_service;
 
+import static java.security.AccessController.getContext;
+
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
 
 public class MyService extends Service {
+
     MediaPlayer mymedia;
     @Override
     public IBinder onBind(Intent intent) {
@@ -15,7 +18,7 @@ public class MyService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        mymedia = MediaPlayer.create(MyService.this, R.raw.QuocCa);
+        mymedia = MediaPlayer.create(MyService.this, R.raw.quocca);
         mymedia.setLooping(true);
     }
 
