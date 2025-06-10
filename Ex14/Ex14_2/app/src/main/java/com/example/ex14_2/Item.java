@@ -7,7 +7,7 @@ public class Item {
     public Item() {
     }
 
-    public Item(String maso, Integer thich, String tieude) {
+    public Item(String maso, String tieude, Integer thich ) {
         this.maso = maso;
         this.thich = thich;
         this.tieude = tieude;
