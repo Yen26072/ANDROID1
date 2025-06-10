@@ -22,7 +22,7 @@ public class MyarrayAdapter extends ArrayAdapter<Item> {
     public MyarrayAdapter(Activity context, int LayoutId, ArrayList<Item> arr) {
         super(context, LayoutId, arr);
         this.context = context;
-        LayoutId = LayoutId;
+        this.LayoutId = LayoutId;
         this.myArray = arr;
     }
 
