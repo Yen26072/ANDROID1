@@ -66,8 +66,8 @@ public class MainActivity extends AppCompatActivity {
         tab1.setIndicator("", getResources().getDrawable(R.drawable.cong));
         tab.addTab(tab1);
         TabHost.TabSpec tab2 = tab.newTabSpec("t2");
-        tab1.setContent(R.id.tab2);
-        tab1.setIndicator("", getResources().getDrawable(R.drawable.lichsu));
+        tab2.setContent(R.id.tab2);
+        tab2.setIndicator("", getResources().getDrawable(R.drawable.lichsu));
         tab.addTab(tab2);
         editA = (EditText) findViewById(R.id.editTextText);
         editB = (EditText) findViewById(R.id.editTextText2);
