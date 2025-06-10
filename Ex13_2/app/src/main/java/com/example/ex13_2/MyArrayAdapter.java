@@ -31,6 +31,7 @@ public class MyArrayAdapter extends ArrayAdapter<phone> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater myInflactor = context.getLayoutInflater();
+        convertView = myInflactor.inflate(idlayout, null);
         phone myphone = mylist.get(position);
         ImageView imgphone = convertView.findViewById(R.id.imagePhone);
         imgphone.setImageResource(myphone.getImagephone());
