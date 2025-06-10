@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
                 int b = Integer.parseInt(edtb.getText().toString());
                 int kq = a + b;
                 edtkq.setText(kq + "");
-                lichsu += a + " + " + b + " = " + kq;
+                lichsu += "\n" + a + " + " + b + " = " + kq;
                 txtlichsu.setText(lichsu);
             }
         });
