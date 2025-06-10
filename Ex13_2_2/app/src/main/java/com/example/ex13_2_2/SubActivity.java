@@ -1,6 +1,9 @@
 package com.example.ex13_2_2;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +13,10 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class SubActivity extends AppCompatActivity {
 
+    private Bundle extra;
+    TextView txtname2;
+    ImageView img2;
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,5 +27,11 @@ public class SubActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        txtname2 = (TextView) findViewById(R.id.textView2);
+        img2 = (ImageView) findViewById(R.id.imageView2);
+        extra = getIntent().getExtras();
+        int position = extra.getInt("TITLE");
+        txtname2.setText(MainActivity.arrayName[position]);
+        img2.setImageResource(MainActivity.imageName[position]);
     }
 }
