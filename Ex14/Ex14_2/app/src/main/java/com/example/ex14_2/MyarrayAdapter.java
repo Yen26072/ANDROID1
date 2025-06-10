@@ -42,6 +42,7 @@ public class MyarrayAdapter extends ArrayAdapter<Item> {
         TextView tieude = convertView.findViewById(R.id.txttieude);
         tieude.setText(myItem.getTieude());
         TextView maso = convertView.findViewById(R.id.txtmaso);
+        maso.setText(myItem.getMaso());
         return convertView;
     }
 }
