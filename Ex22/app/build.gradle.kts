@@ -6,6 +6,7 @@ android {
     namespace = "com.example.ex22"
     compileSdk = 35
 
+
     defaultConfig {
         applicationId = "com.example.ex22"
         minSdk = 28
@@ -15,6 +16,7 @@ android {
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
+    useLibrary("org.apache.http.legacy")
 
     buildTypes {
         release {
